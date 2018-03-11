@@ -1,0 +1,47 @@
+{
+  "name": "tigra-image-library/ascii-art",
+  "description": "This class can generate a text that looks like a given image. It traverses the pixels of a given image and converts the color values of each region to a character text, so when you look at the sequence of converted characters it looks like the original image. The result text can optionally be outputted formatted as HTML and be displayed in color.",
+  "type": "library",
+  "license": "LGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Artur Graniszewski",
+      "email": "artur.graniszewski@gmail.com"
+    }
+  ],
+  "support": {
+    "email": "artur.graniszewski@gmail.com",
+    "source": "https://github.com/artur-graniszewski/tigra-ascii-art",
+    "issues": "https://github.com/artur-graniszewski/tigra-ascii-art/issues"
+  },
+  "homepage": "https://github.com/artur-graniszewski/tigra-ascii-art",
+  "keywords": [
+    "imaging",
+    "ascii-art",
+    "gd2",
+    "php"
+  ],
+  "require": {
+    "php": "^5.4",
+    "ext-gd2": "*",
+    "tigra-image-library/gd2-imaging": "*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Tigra\\AsciiArt\\": "."
+    }
+  },
+  "autoload-dev": {
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit"
+  }
+}
