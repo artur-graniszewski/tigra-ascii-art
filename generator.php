@@ -118,7 +118,7 @@ class Generator
 		}
 		$this->image->resize(($this->image->getWidth() - ($this->image->getWidth() % 8)) / $resizeFactor, ($this->image->getHeight() - ($this->image->getHeight() % 8)) / $resizeFactor);
 		$colorImage = $this->image->getCopy();
-		$charsImage = new Image('ascii_art.png');
+		$charsImage = new Image(__DIR__ . '/ascii_art.png');
 		$width = $this->image->getWidth();
 		$height = $this->image->getHeight();
 
